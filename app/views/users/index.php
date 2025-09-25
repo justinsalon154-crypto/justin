@@ -57,6 +57,8 @@
           </tbody>
         </table>
       </div>
+          <?php
+	        echo $page;?>
 
       <!-- Button -->
       <div class="mt-5">
