@@ -23,6 +23,11 @@
       <div class="flex justify-between items-center mb-6">
         <h1 class="text-2xl font-semibold text-gray-800">👥 User Directory</h1>
       </div>
+		<form action="<?=site_url('users');?>" method="get" class="search-form">
+          <?php $q = isset($_GET['q']) ? $_GET['q'] : ''; ?>
+          <input name="q" type="text" placeholder="Search" value="<?=html_escape($q);?>">
+          <button type="submit">Search</button>  
+        </form>
 
       <!-- Table -->
       <div class="overflow-x-auto rounded-xl shadow">
